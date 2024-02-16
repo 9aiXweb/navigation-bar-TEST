@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
@@ -185,8 +185,6 @@
 <li class="toctree-l1"><a class="reference internal" href="chapter-1.html">Basic Machine Learning in NLP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter-2.html">Understanding Word Embeddings</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">NLP 100 Exercises</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="chapter-4.html">ニューラルネットワーク (1)</a></li>
 </ul>
 
@@ -383,7 +381,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">NLP 100 Exercises</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-1-warm-up">chapter 1: Warm-up</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversed-string">00) Reversed string</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schoolded">01) “schoolded”</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shoe-cold-schooled">02) “shoe” + “cold” = “schooled”</a><ul class="nav section-nav flex-column">
@@ -402,9 +400,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#template-based-sentence-generation">07) Template-based sentence generation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cipher-text">08) cipher text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#typoglycemia">09) Typoglycemia</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-2-unix-commands">Chapter 2: UNIX Commands</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-2-unix-commands">Chapter 2: UNIX Commands</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-count">10) Line count</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#replace-tabs-into-spaces">11) Replace tabs into spaces</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#col1-txt-from-the-first-column-col2-txt-from-the-second-columnpermalink">12) col1.txt from the first column, col2.txt from the second columnPermalink</a></li>
@@ -416,14 +412,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sort-lines-in-descending-order-of-the-third-column">18) Sort lines in descending order of the third column</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-of-a-string-in-the-first-column-in-descending-order">19) Frequency of a string in the first column in descending order</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-3-regular-expression">Chapter 3: Regular Expression</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-json-documents">20) Read JSON documents</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#country-flag">29) Country flag</a></li>
-</ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -434,10 +422,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>link: <a class="reference external" href="https://nlp100.github.io/en/ch01.html">https://nlp100.github.io/en/ch01.html</a></p>
-<section class="tex2jax_ignore mathjax_ignore" id="nlp-100-exercises">
+  <section class="tex2jax_ignore mathjax_ignore" id="nlp-100-exercises">
 <h1>NLP 100 Exercises<a class="headerlink" href="#nlp-100-exercises" title="Link to this heading">#</a></h1>
-<p>#chapter 1: Warm-up</p>
+<section id="chapter-1-warm-up">
+<h2>chapter 1: Warm-up<a class="headerlink" href="#chapter-1-warm-up" title="Link to this heading">#</a></h2>
+</section>
 <section id="reversed-string">
 <h2>00) Reversed string<a class="headerlink" href="#reversed-string" title="Link to this heading">#</a></h2>
 <p>sequence[start:stop:step]</p>
@@ -737,12 +726,12 @@ letter test
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>X: {&#39;is&#39;, &#39;ra&#39;, &#39;ap&#39;, &#39;ar&#39;, &#39;ad&#39;, &#39;di&#39;, &#39;pa&#39;, &#39;se&#39;}
-Y: {&#39;ra&#39;, &#39;ph&#39;, &#39;ag&#39;, &#39;ap&#39;, &#39;ar&#39;, &#39;gr&#39;, &#39;pa&#39;}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>X: {&#39;ar&#39;, &#39;se&#39;, &#39;di&#39;, &#39;pa&#39;, &#39;ad&#39;, &#39;is&#39;, &#39;ap&#39;, &#39;ra&#39;}
+Y: {&#39;ar&#39;, &#39;ph&#39;, &#39;pa&#39;, &#39;ap&#39;, &#39;ag&#39;, &#39;gr&#39;, &#39;ra&#39;}
 
-Union: {&#39;is&#39;, &#39;ra&#39;, &#39;ph&#39;, &#39;ag&#39;, &#39;ap&#39;, &#39;ar&#39;, &#39;ad&#39;, &#39;gr&#39;, &#39;di&#39;, &#39;pa&#39;, &#39;se&#39;}
-Intersection: {&#39;pa&#39;, &#39;ap&#39;, &#39;ra&#39;, &#39;ar&#39;}
-Difference: {&#39;ad&#39;, &#39;is&#39;, &#39;di&#39;, &#39;se&#39;}
+Union: {&#39;ar&#39;, &#39;se&#39;, &#39;di&#39;, &#39;ph&#39;, &#39;pa&#39;, &#39;gr&#39;, &#39;ad&#39;, &#39;ag&#39;, &#39;is&#39;, &#39;ap&#39;, &#39;ra&#39;}
+Intersection: {&#39;ra&#39;, &#39;pa&#39;, &#39;ar&#39;, &#39;ap&#39;}
+Difference: {&#39;ad&#39;, &#39;is&#39;, &#39;se&#39;, &#39;di&#39;}
 
 &#39;se&#39; is include in X
 &#39;se&#39; is NOT include　in Y
@@ -831,15 +820,14 @@ Observe the result by giving a sentence, e.g., “I couldn’t believe that I co
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;Do&#39;nt Tlrol!! Farm Frt!!is! I need the Bfu!!f! Well paleyd Bo!r!&quot;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;D&#39;not Tol!lr! Farm Ftr!i!s! I need the Bf!!fu! Well plaeyd Br!o!&quot;
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="chapter-2-unix-commands">
-<h1>Chapter 2: UNIX Commands<a class="headerlink" href="#chapter-2-unix-commands" title="Link to this heading">#</a></h1>
+<section id="chapter-2-unix-commands">
+<h2>Chapter 2: UNIX Commands<a class="headerlink" href="#chapter-2-unix-commands" title="Link to this heading">#</a></h2>
 <p>data_file: <code class="docutils literal notranslate"><span class="pre">popular-names.txt</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -860,6 +848,7 @@ Observe the result by giving a sentence, e.g., “I couldn’t believe that I co
 </div>
 </div>
 </div>
+</section>
 <section id="line-count">
 <h2>10) Line count<a class="headerlink" href="#line-count" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
@@ -1232,16 +1221,6 @@ or available locally via: info &#39;(coreutils) sort invocation&#39;
 </div>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="chapter-3-regular-expression">
-<h1>Chapter 3: Regular Expression<a class="headerlink" href="#chapter-3-regular-expression" title="Link to this heading">#</a></h1>
-<section id="read-json-documents">
-<h2>20) Read JSON documents<a class="headerlink" href="#read-json-documents" title="Link to this heading">#</a></h2>
-</section>
-<hr class="docutils" />
-<section id="country-flag">
-<h2>29) Country flag<a class="headerlink" href="#country-flag" title="Link to this heading">#</a></h2>
-</section>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1307,7 +1286,7 @@ or available locally via: info &#39;(coreutils) sort invocation&#39;
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">NLP 100 Exercises</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-1-warm-up">chapter 1: Warm-up</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversed-string">00) Reversed string</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schoolded">01) “schoolded”</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shoe-cold-schooled">02) “shoe” + “cold” = “schooled”</a><ul class="nav section-nav flex-column">
@@ -1326,9 +1305,7 @@ or available locally via: info &#39;(coreutils) sort invocation&#39;
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#template-based-sentence-generation">07) Template-based sentence generation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cipher-text">08) cipher text</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#typoglycemia">09) Typoglycemia</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-2-unix-commands">Chapter 2: UNIX Commands</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-2-unix-commands">Chapter 2: UNIX Commands</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-count">10) Line count</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#replace-tabs-into-spaces">11) Replace tabs into spaces</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#col1-txt-from-the-first-column-col2-txt-from-the-second-columnpermalink">12) col1.txt from the first column, col2.txt from the second columnPermalink</a></li>
@@ -1340,14 +1317,6 @@ or available locally via: info &#39;(coreutils) sort invocation&#39;
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sort-lines-in-descending-order-of-the-third-column">18) Sort lines in descending order of the third column</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frequency-of-a-string-in-the-first-column-in-descending-order">19) Frequency of a string in the first column in descending order</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-3-regular-expression">Chapter 3: Regular Expression</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-json-documents">20) Read JSON documents</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#country-flag">29) Country flag</a></li>
-</ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
